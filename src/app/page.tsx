@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BirthDeliveryCarePage } from "@/components/birth-delivery-care/BirthDeliveryCarePage";
@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <Header />
+      <Header minimalNav />
       <main>
         <BirthDeliveryCarePage />
       </main>
-      <Footer />
+      <Footer minimalNav />
     </>
   );
 }
