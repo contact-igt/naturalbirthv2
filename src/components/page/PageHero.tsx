@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { LineArtIllustration, type LineArtVariant } from "@/components/illustrations/LineArt";
