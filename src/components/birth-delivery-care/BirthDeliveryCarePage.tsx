@@ -141,12 +141,14 @@ export function BirthDeliveryCarePage() {
         intro="At Birthwave, natural birth preparation begins during pregnancy. We help you understand labour, prepare your body and mind, explore your birth preferences, and approach childbirth with personalised obstetric care and holistic support."
         accent="coral"
         image={{
-          src: "/images/care/birth-position-practice.png",
+          src: "/images/care/birth-position-practice2.jpg",
           alt: "A pregnant woman practising a birth-ball position during a workshop",
+          objectPosition: "object-[50%_18%] scale-[1.15]",
         }}
         imageSide={{
-          src: "/images/care/prenatal-workshop.png",
+          src: "/images/care/prenatal-workshop.jpg",
           alt: "A birth partner practising a hand-holding support technique",
+          objectPosition: "object-[50%_16%] scale-[1.55] top-[40px]",
         }}
         tag={{
           heading: "Informed choices",
@@ -154,6 +156,9 @@ export function BirthDeliveryCarePage() {
         }}
         illustration="birth"
       />
+
+      {/* VIDEO EXPERIENCE */}
+      <VideoExperience />
 
       {/* SECTION 2: Understanding Natural Birth */}
       <section id="care-overview" className="scroll-mt-[100px] bg-white py-16 md:py-20 border-b border-border/60">
@@ -187,8 +192,8 @@ export function BirthDeliveryCarePage() {
         heading="An approach, not a route of delivery."
         body="Natural birth describes how you prepare for and experience labour — through movement, breathing, relaxation, comfort measures and informed choice — with fewer routine interventions where clinically appropriate. The Birthwave team can help you understand what preparation and support may be appropriate for your pregnancy."
         image={{
-          src: "/images/care/workshop-facilitator.png",
-          alt: "A childbirth educator teaching with a pelvis model during a workshop",
+          src: "/images/care/naturalbirth-approach.jpg",
+          alt: "A childbirth educator leading a natural birth preparation workshop",
         }}
         items={[
           {
@@ -271,7 +276,7 @@ export function BirthDeliveryCarePage() {
       </section>
 
       {/* SECTION 4: THE BIRTHWAVE APPROACH */}
-      <section id="who-its-for" className="scroll-mt-[100px] bg-white py-16 md:py-24 border-b border-border/60">
+      {/* <section id="who-its-for" className="scroll-mt-[100px] bg-white py-16 md:py-24 border-b border-border/60">
         <Container>
           <div className="max-w-3xl">
             <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-rose">
@@ -354,9 +359,10 @@ export function BirthDeliveryCarePage() {
             </a>
           </div>
         </Container>
-      </section>
+      </section> */}
 
-      {/* SECTION 5: PREPARING YOUR BODY & MIND */}
+      {/* SECTION 5: PREPARING YOUR BODY & MIND — hidden on website + landing pages per request */}
+      {false && (
       <section id="journey" className="scroll-mt-[100px] bg-cream/45 py-16 md:py-24 border-b border-border/60">
         <Container>
           <div className="max-w-3xl">
@@ -428,6 +434,7 @@ export function BirthDeliveryCarePage() {
           </div>
         </Container>
       </section>
+      )}
 
       {/* SECTION 6: MEET YOUR DOCTOR */}
       <section id="doctor" className="scroll-mt-[100px] bg-white py-16 md:py-24 border-b border-border/60">
@@ -675,9 +682,6 @@ export function BirthDeliveryCarePage() {
           </div>
         </Container>
       </section>
-
-      {/* VIDEO EXPERIENCE */}
-      <VideoExperience />
 
       {/* SECTION 10: FAQs */}
       <section id="faq" className="scroll-mt-[100px] bg-paper py-16 md:py-24">

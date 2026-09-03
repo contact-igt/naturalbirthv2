@@ -1,7 +1,7 @@
 import { PageHero } from "@/components/page/PageHero";
 import { WhoItsFor } from "@/components/page/WhoItsFor";
 import { DoctorTrust } from "@/components/page/DoctorTrust";
-import { JourneySteps } from "@/components/page/JourneySteps";
+// import { JourneySteps } from "@/components/page/JourneySteps"; // hidden per request
 import { ServiceApproach } from "@/components/page/ServiceApproach";
 import { VideoExperience } from "@/components/home/VideoExperience";
 import { RelatedSupport } from "@/components/page/RelatedSupport";
@@ -104,12 +104,14 @@ export function ServiceLandingPage({
         <WhoItsFor points={service.whoItsFor} />
       )}
 
+      {/* "Pregnancy Journey" steps section — hidden on website + landing pages per request
       <JourneySteps
         eyebrow={service.journey.eyebrow}
         heading={service.journey.heading}
         intro={service.journey.intro}
         steps={service.journey.steps}
       />
+      */}
 
       <DoctorTrust
         member={expert}
