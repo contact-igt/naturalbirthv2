@@ -57,6 +57,8 @@ export function ServiceLandingPage({
         tag={service.hero.tag}
       />
 
+      <VideoExperience />
+
       {service.continuum && (
         <JourneyPathPanel
           eyebrow={service.continuum.eyebrow}
@@ -129,8 +131,6 @@ export function ServiceLandingPage({
           image={service.approach.image ?? service.image}
         />
       )}
-
-      <VideoExperience />
 
       {!isAdLanding && (
         <RelatedSupport
